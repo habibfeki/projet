@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.header {
+  background-image: url('image11.jfif');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+.header .photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.header h1 {
+  margin: 10px 0;
+  color: #ff00b3;
+}
+.header .menu {
+  list-style: none;
+  padding: 0;
+}
+.header .menu li {
+  display: inline;
+  margin: 0 10px;
+}
+.header .menu a {
+  color: #000dff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.home {
+  background-image: url('image2.jfif');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  text-align: center;
+  color: white;
+}
+.home h2 {
+  margin-bottom: 10px;
+}
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;/*chatgpt*/
+}
+.buttons button:hover {
+  background: #ff00b3;
+}
+.skills {
+  background-image: url('image3.jfif');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+.skills h2 {
+  margin-bottom: 20px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;/*chatgpt*/
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}/*chatgpt*/
+
+.projects {
+  background-image: url('image2.jfif');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.project-item {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.hire-me {
+  background-image: url('image3.jfif');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+.hire-me form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+.hire-me input, .hire-me textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+.hire-me button {
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;/*chatgpt*/
+}
+.hire-me button:hover {
+  background: #ff00b3;
+}
+@media (max-width: 768px) {
+  .cards, .project-list {
+      flex-direction: column;
+  }
+
+  .card, .project-item {
+      width: 80%;
+      margin-bottom: 20px;
+  }/*chatgpt*/
+}
